@@ -32,3 +32,12 @@ div + p {
   display:flex;
   justify-content:center;
 }
+
+ul > li:nth-child(3) {
+  background-color: white;
+  color: green;
+}
+
+th > td {
+  font-size: 0em;
+}
