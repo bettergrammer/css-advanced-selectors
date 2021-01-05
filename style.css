@@ -1,5 +1,7 @@
 h1 {
-  color: rgb(222, 31, 31);
+  color: white;
+  background-color: blue;
+  padding: 10px;
 }
 
 div {
@@ -19,11 +21,13 @@ div + div {
 div ~ div {
   background-color: grey;
   border: 5px solid black;
-  padding: 2%;
+  padding: 15px;
 }
 
 body > div:nth-child(2) {
   background-color: pink;
+  margin: 10px;
+  padding: 20px;
 }
 
 div + p {
@@ -31,13 +35,87 @@ div + p {
   background-color:orange;
   display:flex;
   justify-content:center;
+  width: 99%;
 }
 
-ul > li:nth-child(3) {
-  background-color: white;
-  color: green;
+ul > li:nth-child(odd) {
+  background-color: orange;
+  margin: 30px;
+  font-weight: 900;
+}
+
+ul > li:nth-child(2) {
+  margin: 30px;
+  background-color: turquoise;
+  font-weight: 400;
 }
 
 th > td {
   font-size: 0em;
 }
+
+h3 + p:first-line {
+  font-size: 2.5em;
+  font-variant: small-caps;
+  margin: 5px;
+}
+
+a:link {
+  background-color: black;
+  color: red;
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+  max-width: 200px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+a:visited {
+  background-color: palegoldenrod;
+  color: black;
+  font-weight: bold;
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+  max-width: 150px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+a:active {
+  padding: 30px;
+  max-width: 200px;
+}
+
+a:hover {
+  font-weight: bold;
+  background-color: rgba(60, 255, 0, 0.384);
+}
+
+/*
+':focus' is most common on form elements:
+
+input:focus {
+  background-color: rgba(83, 83, 211, 0.459);
+}
+
+*/
+
+input:focus {
+  background: green;
+  border: 1px solid #5E5E5E;
+}
+
+input:focus:hover {
+  background: orange;
+}
+
+input:hover {
+  background: rgb(228, 228, 228);
+}
+
+h3:target {
+  background: green;
+  color: orange;
+  }
