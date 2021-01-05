@@ -1,11 +1,13 @@
 body {
-  padding: 100px;
+  padding: 10px 100px;
+  background: linear-gradient(to bottom, rgb(70, 130, 180), rgba(70, 130, 180, 0));
 }
 
 h1 {
   color: white;
-  background-color: blue;
+  background: linear-gradient(to right, rgb(0, 0, 255), rgba(0, 0, 255, 0));
   padding: 10px;
+  border-radius: 10px;
 }
 
 div {
@@ -14,12 +16,14 @@ div {
   padding: 5px;
   border: 2px solid darkblue;
   background-color: orange;
+  background: radial-gradient(rgb(70, 130, 180), rgba(70, 130, 180, 0));
 }
 
 div + div {
   border-radius: 20px;
   border: 5px solid green;
   padding: 5px;
+  background: radial-gradient(rgb(70, 130, 180), rgba(70, 130, 180, 0));
 }
 
 div ~ div {
@@ -148,6 +152,30 @@ td:nth-child(-n+3) {
 
 ul li:nth-child(-n+4) {
   color: green;
+}
+
+li:nth-of-type(2n+4) {
+  border: 2px solid purple;
+  color: orange;
+}
+
+input:not([type="text"]) {
+  height: 100px;
+}
+
+ul::first-line {
+  font-variant: small-caps;
+}
+
+/* drop cap */
+
+p {
+  font-size: 12px;
+}
+
+p::first-letter {
+  font-size: 24px;
+  float: left;
 }
 
 
