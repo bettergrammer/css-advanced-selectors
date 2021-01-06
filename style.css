@@ -268,3 +268,15 @@ form {
   padding: 5px;
   margin-top: 10px
 }
+
+div > form > .submit-button {
+  height: 30px;
+  width: 7%;
+  transition: all 500ms ease;
+}
+
+div > form > .submit-button:hover {
+  background: rgb(75, 75, 247) !important;
+  height: 50px;
+  width: 110px;
+}
