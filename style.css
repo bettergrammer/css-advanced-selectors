@@ -217,6 +217,7 @@ div:nth-from-last(2) > div{
 .container {
   display: flex;
   flex-direction: row; /* default */
+  flex-wrap: wrap;
   max-width: 100%;
   background: white;
 }
