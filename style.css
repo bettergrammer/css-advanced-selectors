@@ -244,8 +244,21 @@ div:nth-from-last(2) > div{
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
+  justify-content: center space-between;
+  align-content: stretch;
+  background: white;
+  height: 500px;
+  /* grid-row-gap: 200px; */
+  /* grid-column-gap: 100px; */
+  /* gap: 200px 100px; */
+
+  /* grid-area: row-start / column-start / row-end / column-end */
 }
 
 .grid-item {
-  width: 50px;
+  width: 40px;
+}
+
+.grid-item:first-child {
+  width: 92.5%;
 }
