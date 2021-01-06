@@ -262,3 +262,9 @@ div:nth-from-last(2) > div{
 .grid-item:first-child {
   width: 92.5%;
 }
+
+form {
+  display: block;
+  padding: 5px;
+  margin-top: 10px
+}
