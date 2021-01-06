@@ -232,7 +232,10 @@ div:nth-from-last(2) > div{
   width: 10px;
   background: green;
   border: 5px solid black;
+
+  flex: 0.5 1 75px; /* flex: grow shrink basis; */
+
+  flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 150px;
-  flex: 0.5 1 75px;
 }

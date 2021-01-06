@@ -173,10 +173,26 @@
     </form>
   </div>
   <div class="container">
-    <div class="container-item" style="flex-shrink 1;">A</div>
-    <div class="container-item" style="flex-shrink: 3;">B</div>
-    <div class="container-item">C</div>
-    <div class="container-item" style="flex-shrink:1;">D</div>
+    <div class="container-item" style="
+    flex: 3 0 100px;
+    align-self: flex-start;
+    ">A</div>
+    <div class="container-item" style="
+    flex: 4 0 100px;
+    align-self: center;
+    ">B</div>
+    <div class="container-item" style="
+    flex: 5 0 100px;
+    align-self: flex-end;
+    ">C</div>
+    <div class="container-item" style="
+    flex: 4 0 100px;
+    align-self: center;
+    ">D</div>
+    <div class="container-item" style="
+    flex: 3 0 100px;
+    align-self: flex-start;
+    ">E</div>
   </div>
   <div id="last">
     <h3>Last Div</h3>
