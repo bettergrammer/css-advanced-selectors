@@ -253,6 +253,7 @@ div:nth-from-last(2) > div{
   /* gap: 200px 100px; */
 
   /* grid-area: row-start / column-start / row-end / column-end */
+  /* grid-area: 1 / 2 / 3 / span 2; */
 }
 
 .grid-item {
