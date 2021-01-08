@@ -289,3 +289,35 @@ div > form > .submit-button:hover {
   height: 50px;
   width: 110px;
 }
+
+#one {
+  /* animation-name: red-to-black; */
+  /* animation-duration: 4s; */
+  /* animation-timing-function: ease;  */
+  /* liner, ease-in, ease-out, ease-in-out */
+  /* animation-delay: 2s; */
+  /* animation-iteration-count: 2; */
+  /* animation-direction: reverse; */
+
+  /* animation: -name, -duration, -timing-function (speed), -delay, -iteration-count, -direction; */
+  animation: red-to-black 4s ease 0s 1 normal;
+}
+
+@keyframes red-to-black {
+  0% {
+    background: red;
+    transform: translate(0px, 0px);
+  }
+  33% {
+    background: orange;
+    transform: translate(15px, 30px);
+  }
+  66% {
+    background: orange;
+    transform: translate(-15px, -30px);
+  }
+  100% {
+    background: radial-gradient(rgb(70, 130, 180), rgba(70, 130, 180, 0));
+    transform: translate(0px, 0px);
+  }
+}
